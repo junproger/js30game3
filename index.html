@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="MobileOptimized" content="width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+	<title>The "Hungry Hamster" Game</title>
+	<link rel="icon" href="./assets/favicon.ico">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<!-- body block -->
+<body id="body" class="body">
+	<div id="wrap" class="wrap">
+		<!-- header block -->
+        <header class="header">
+			<div class="logo"><a class="link1" href="https://github.com/junproger"></a></div>
+			<div class="slug"><a class="link2" href="./index.html">The "Hungry Hamster" Game</a></div>
+		</header>
+		<!-- main block -->
+		<div id="main" class="main">
+			<div id="game" class="game">
+				<div id="block" class="block">
+					<div id="place" class="place">
+					</div>
+					<div id="button" class="button">
+						<button id="iplay" class="iplay">Start the "Hungry Hamster" Game!</button>
+					</div>
+				</div>
+				<div id="aside" class="aside over">
+					<div> &nbsp; </div>
+					<div id='previous'>
+						<div>Previous:</div>
+						<div><small>Latest game (id):</small><span id="lastgame"> &mdash;</span></div>
+						<div><small>Latest time (ms):</small><span id="lasttime"> &mdash;</span></div>
+						<div><small>Latest score (cl):</small><span id="lastscore"> &mdash;</span></div>
+						<div><small>Latest hunger (%):</small><span id="lasthunger"> &mdash;</span></div>
+						<div><small>Latest result:</small><span id="lastresult"> &mdash;</span></div>
+						<div> &nbsp; </div>
+					</div>
+					<div id="current">
+						<div>Currents:</div>
+						<div><small>Actual game (id):</small><span id="actgame"> &mdash;</span></div>
+						<div><small>Actual time (ms):</small><span id="acttime"> &mdash;</span></div>
+						<div><small>Actual score (cl):</small><span id="actscore"> &mdash;</span></div>
+						<div><small>Actual hunger (%):</small><span id="acthunger"> &mdash;</span></div>
+						<div><small>Actual result:</small><span id="actresult"> &mdash;</span></div>
+						<div> &nbsp; </div>
+					</div>
+					<div id="history">
+						<div><small>[ <a id ="last10open" href="#">Last 10 rounds open</a> ]</small></div>
+						<div> &nbsp; </div>
+					</div>
+					<div id="last10text" class="last10text">
+						<div> &nbsp; </div>
+						<div id="listrounds" class="listrounds"></div>
+						<div><small>[ <a id ="last10close" href="#">Last 10 rounds close</a> ]</small></div>
+					</div>
+				</div>
+				<div id="modal" class="modal none">
+					<div id="message" class="message"></div>
+				</div>
+			</div>
+		</div>
+		<!-- footer block -->
+		<footer class="footer">
+			<span class="inform">&copy;</span>
+			<span class="inform">2022</span>
+			<a href="https://github.com/junproger" class="github inform">junproger</a>
+			<a href="https://rs.school/js-stage0/" class="school"></a>
+		</footer>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>
